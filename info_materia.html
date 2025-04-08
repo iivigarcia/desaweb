@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diseño y Desarrollo Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #343a40;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav li:hover {
+      background-color: #495057;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #495057;
+    }
+
+    nav li:hover > ul {
+      display: block;
+    }
+
+    section {
+      padding: 40px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #0d6efd;
+    }
+
+    ul.actividades {
+      margin-top: 10px;
+    }
+
+    ul.actividades li {
+      margin: 5px 0;
+    }
+
+    a.actividad-link {
+      color: #0d6efd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Diseño y Desarrollo Web</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#bibliografia">Bibliografía</a></li>
+      <li><a href="#examenes">Fechas de exámenes</a></li>
+      <li>
+        <a href="#actividades">Actividades UVAs</a>
+        <ul>
+          <li><a href="#uva1">UVA1</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="bibliografia">
+      <h2>Bibliografía</h2>
+      <p>Estos son algunos de los recursos más útiles la materia:</p>
+      <ul>
+        <li>
+          <a href="https://www.htmlandcssbook.com/" target="_blank" rel="noopener noreferrer">
+            HTML & CSS - Jon Duckett (Sitio oficial del libro)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pearson.com/store/p/html5-and-css3-illustrated-complete/P100000720153" target="_blank" rel="noopener noreferrer">
+            Diseño Web con HTML5 y CSS3 - Terry Felke-Morris (Pearson)
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">
+            Mozilla Developer Network (MDN Web Docs)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+            W3Schools - Tutoriales prácticos de HTML, CSS, JavaScript
+          </a>
+        </li>
+        <li>
+          <a href="https://web.dev/learn/" target="_blank" rel="noopener noreferrer">
+            Google Web.dev - Recursos para desarrolladores modernos
+          </a>
+        </li>
+      </ul>
+    </section>
+    
+
+    <section id="examenes">
+      <h2>Fechas de Exámenes</h2>
+      <ul>
+        <li>Parcial 1: 29 de Abril</li>
+        <li>Parcial 2: 24 de junio</li>
+        <li>Final Regular: 20 de julio</li>
+      </ul>
+    </section>
+
+    <section id="actividades">
+      <h2>Actividades UVAs</h2>
+      <section id="uva1">
+        <h3>UVA 1 - Introducción al desarrollo web</h3>
+        <ul class="actividades">
+          <li><a class="actividad-link" href="https://virtualbsp.uade.edu.ar/d2l/le/content/43347/viewContent/571984/View">Cuestionario - Múltiple choice: Conceptos generales </a></li>
+          <li><a class="actividad-link" href="https://virtualbsp.uade.edu.ar/d2l/le/content/43347/viewContent/571985/View">Ejercicio individual: HTML - Introducción </a></li>
+          <li><a class="actividad-link" href="https://virtualbsp.uade.edu.ar/d2l/le/content/43347/viewContent/571987/View">Ejercicio individual: HTML - Etiquetas</a></li>
+          <li><a class="actividad-link" href="https://virtualbsp.uade.edu.ar/d2l/le/content/43347/viewContent/571989/View">Cuestionario - Múltiple choice: Arquitectura</a></li>
+          <li><a class="actividad-link" href="https://virtualbsp.uade.edu.ar/d2l/le/content/43347/viewContent/571990/View">Ejercicio individual: Ejercicio integrador</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+</body>
+</html>
